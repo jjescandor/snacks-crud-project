@@ -1,0 +1,100 @@
+body {
+    background: rgb(166, 0, 126);
+    background: linear-gradient(180deg, rgba(166, 0, 126, 1) 0%, rgba(24, 168, 159, 1) 100%);
+    color: rgb(33, 32, 32);
+    font-family: Optima, sans-serif;
+}
+
+header {
+    margin: auto;
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(45, 7, 45);
+    margin: 1rem;
+}
+
+
+nav {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgb(52, 50, 50);
+    margin: 1rem;
+}
+
+div {
+    margin: auto;
+    width: 400px;
+}
+
+.detail {
+    background-color: rgb(98, 172, 172);
+    height: 600px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 3px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.buttons {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: none;
+    margin: none;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: aliceblue;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 3%;
+    transition-duration: 350ms;
+}
+
+button:hover {
+    background-color: rgb(177, 129, 222);
+    transition-duration: 350ms;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+input {
+    background-color: transparent;
+    border: none;
+}
+
+li:hover {
+    color: rgb(177, 129, 222);
+}
+
+a:hover {
+    color: rgb(177, 129, 222);
+}
+
+textarea {
+    background-color: rgb(69, 67, 67);
+}

@@ -3,9 +3,11 @@
 {% block content %}
 <ul>
     {% for snack in object_list %}
-    <li>
-        <a href="{% url 'detail_snack' snack.pk %}">{{ snack.title }}</a>
-    </li>
+
+    <a href="{% url 'detail_snack' snack.pk %}">
+        <li>{{ snack.title }}</li>
+    </a>
+
     {% endfor %}
 </ul>
 {% endblock content %}

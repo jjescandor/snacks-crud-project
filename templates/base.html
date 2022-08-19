@@ -5,24 +5,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <title>Movies</title>
 </head>
 
 <body>
-    <nav>
-        <a href="{% url 'list_snack' %}">Home</a> |
-        <a href="{% url 'create_snack' %}">Create A Snack</a>
-    </nav>
-    <header>
-        <h1>Snacks Store</h1>
-    </header>
-    {% block content %}
-    <p>Looks like somebody forgot to define this block in child template</p>
-    {% endblock content %}
-    <footer></footer>
+    <main>
+        <header>
+            <h1>Snacks Store</h1>
+        </header>
+        <nav>
+            <a href="{% url 'list_snack' %}">Home</a>
+            <a href="{% url 'create_snack' %}">Create A Snack</a>
+        </nav>
+        <div>
+            {% block content %}
+            <p>Looks like somebody forgot to define this block in child template</p>
+            {% endblock content %}
+        </div>
+        <footer></footer>
+    </main>
 </body>
 
 </html>

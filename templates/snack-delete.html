@@ -8,7 +8,7 @@
     {% csrf_token %}
     {{ form.as_p }}
     <p>Do you really want to delete "{{ snack.name }}"?</p>
-    <input type="submit" value="OK">
+    <button><input type="submit" value="OK"></button>
 </form>
 
 {% endblock content %}
