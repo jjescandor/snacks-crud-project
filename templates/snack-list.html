@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<ul>
+<ul class="a">
     {% for snack in object_list %}
 
     <a href="{% url 'detail_snack' snack.pk %}">
